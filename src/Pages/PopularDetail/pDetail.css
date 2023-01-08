@@ -1,0 +1,16 @@
+.left-pDetail{
+    margin-left:-100px;
+}
+
+.main-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:1250px){
+    .pdetail-right{
+        margin-right:100px;
+    }
+}

@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+.detail-title{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color:#ed2a7c;
+    font-size:14px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.en-title{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    font-size:16px;
+    letter-spacing: 1px;
+}
+
+.detail-container-wrapper{
+    display: grid;
+}
+
+
+/* left-block-styles */
+
+.left-box{
+    width: 50%;
+}
+
+.left-block{
+    position: relative;
+    max-width: 254px;
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    margin:50px 0px 70px;
+    left:140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: rgb(149 157 165 / 20%) 0px 4px 14px;
+}
+
+
+.main-img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+
+/* add-image-block-styles */
+
+.add-img-block-wrapper{
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add-img-block{
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: rgb(149 157 165 / 20%) 0px 4px 14px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+}
+
+
+.add-img-block img{
+    width: 70%;
+    height: 85%;
+    border-radius: 50%;
+}
+
+/* left-block-styles */
+
+
+
+/* right-block-styles */
+
+.right-box{
+    max-width: 1500px;
+    width: 100%;
+    padding:1.5rem;
+    margin-bottom:40px;
+}
+
+.right-main-title{
+    font-size:16px;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.right-main-title::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgb(190, 190, 190);
+    display: inline-block;
+}
+
+
+/* right-block-detail-styles */
+
+.right-block-detail-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-top:7px;
+}
+
+.left-title{
+    font-size:17px;
+    letter-spacing: 1px;
+}
+
+.right-title{
+    font-family: 'Cairo', sans-serif;
+    opacity: 0.7;
+    text-align: start;
+    width: 200px;
+    overflow: hidden;
+    font-size:14px;
+    letter-spacing: 1px;
+}
+
+.right-block-detail::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgb(190, 190, 190);
+    display: inline-block;
+    margin-top:35px;
+}
+
+
+/* right-block-more-styles */
+
+.business-block{
+    width: 100%;
+    height: 50px;
+    background-color: #EFEFEF;
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#ed2a7c;
+    font-size:15px;
+    border-radius:7px;
+}
+
+.business-block h4{
+    margin-left:6px;
+}
+
+
+.pay-methods{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #EFEFEF;
+    margin-top:20px;
+    padding:1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 1px;
+    border-radius:7px;
+    font-size:15px;
+    margin-bottom:30px;
+}
+
+
+.main-pay-methods{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    margin-top:20px;
+    font-size:12px;
+}
+
+.pay-more-title{
+    margin-top:22px;
+}
+
+
+.pay-banks-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pay-banks-wrapper img{
+    width: 120px;
+    margin-top:30px;
+}
+
+.img-size{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    z-index: 10;
+    padding:1.5rem;
+}
+
+@media screen and (min-width:800px){
+    .pay-methods{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: #EFEFEF;
+        margin-top:20px;
+        padding:1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 1px;
+        border-radius:7px;
+        font-size:15px;
+        margin-bottom:30px;
+    }
+
+    .pay-banks-wrapper{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .main-pay-methods{
+        width: 100%;
+        font-size:15px;
+    }
+}
+
+
+@media screen and (min-width:1250px){
+    .detail-container-wrapper{
+        display: flex;
+    }
+
+    .left-block{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:1550px){
+    .detail-container-wrapper{
+        display: flex;
+    }
+
+    .right-main-title{
+        margin-top:55px;
+    }
+
+    .detail-title{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        color:#ed2a7c;
+        font-size:14px;
+        opacity: 0.7;
+        letter-spacing: 1px;
+    }
+    
+    .en-title{
+        font-family: 'Cairo', sans-serif;
+        font-weight: bold;
+        font-size:16px;
+        letter-spacing: 1px;
+    }
+    
+
+    /* left-block-styles */
+    
+    .left-box{
+        width: 50%;
+    }
+    
+    .left-block{
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        height: 700px;
+        background-color: #fff;
+        margin:50px 0px 70px;
+        left:140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        box-shadow: rgb(149 157 165 / 20%) 0px 4px 14px;
+    }
+    
+    
+    .main-img{
+        width: 350px;
+        height: 350px;
+        object-fit: contain;
+    }
+    
+    
+    /* add-image-block-styles */
+    
+    .add-img-block-wrapper{
+        position: absolute;
+        left: -70px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .add-img-block{
+        border-radius: 10px;
+        border: 1px solid #eee;
+        box-shadow: rgb(149 157 165 / 20%) 0px 4px 14px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100px;
+        height: 80px;
+        cursor: pointer;
+    }
+    
+    
+    .add-img-block img{
+        width: 70%;
+        height: 85%;
+        border-radius: 50%;
+    }
+    
+    /* left-block-styles */
+    
+    
+    
+    /* right-block-styles */
+    
+    .right-box{
+        width: 50%;
+    }
+    
+    .right-main-title{
+        font-size:16px;
+        font-family: 'Cairo', sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    .right-main-title::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgb(190, 190, 190);
+        display: inline-block;
+    }
+    
+    
+    /* right-block-detail-styles */
+    
+    .right-block-detail-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        margin-top:7px;
+    }
+    
+    .left-title{
+        font-size:15px;
+        letter-spacing: 1px;
+    }
+
+    
+    .right-title{
+        font-family: 'Cairo', sans-serif;
+        opacity: 0.7;
+        text-align: start;
+        width: 200px;
+        overflow: hidden;
+        font-size:15px;
+        letter-spacing: 1px;
+
+    }
+    
+    .right-block-detail::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgb(190, 190, 190);
+        display: inline-block;
+        margin-top:35px;
+    }
+    
+    
+    /* right-block-more-styles */
+    
+    .business-block{
+        width: 100%;
+        height: 50px;
+        background-color: #EFEFEF;
+        margin-top:30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#ed2a7c;
+        font-size:15px;
+        border-radius:7px;
+    }
+    
+    .business-block h4{
+        margin-left:6px;
+    }
+    
+
+    
+    .pay-methods{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: #EFEFEF;
+        margin-top:20px;
+        padding:1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 1px;
+        border-radius:7px;
+        font-size:15px;
+        margin-bottom:30px;
+    }
+    
+    
+    .main-pay-methods{
+        display: flex;
+        justify-content: center;
+        gap:40px;
+        margin-top:20px;
+        font-size:15px;
+        width: 100%;
+    }
+    
+    .pay-more-title{
+        margin-top:22px;
+    }
+    
+    .pay-banks-wrapper{
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .pay-banks-wrapper img{
+        width: 120px;
+        margin-top:30px;
+    }
+}
+
+.img-size img{
+    border-radius: 10px;
+}

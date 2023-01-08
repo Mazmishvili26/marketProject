@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+.login-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-title{
+    text-align: center;
+    color:white;
+    font-size:30px;
+    margin-top:40px;
+}
+
+.login-wrapper{
+    max-width: 1100px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* login-left-styles */
+
+.login-left{
+    opacity: 0;
+
+}
+
+.login-welcome{
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.login-welcome h1{
+    font-size:28px;
+    color:white;
+    text-align: center;
+}
+
+
+.login-welcome p{
+    font-size:18px;
+    margin-top:15px;
+    color:white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+
+
+
+/* login-right-styles */
+
+.login-right{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    height: 500px;
+    width: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.login-right button{
+    width: 220px;
+    height: 60px;
+    border:1px solid rgba(0, 0, 0, 0.174) !important;
+    background-color: #AA4A44 !important;
+    margin-top:60px;
+}
+
+.login-right button span{
+    color:black;
+    font-weight: bold;
+    font-size:16px;
+    font-family: 'Cairo', sans-serif;
+    color:white;
+    letter-spacing: 1px;
+}
+
+.login-right button div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 50px;
+    background-color: #8808089b !important;
+}
+
+.login-title{
+    font-size:25px;
+    color:rgba(0, 0, 0, 0.741);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    border-radius:20px;
+}
+
+
+
+
+@media screen and (min-width:1150px){
+
+    .login-left{
+        opacity: 1;
+        width: 60%;
+        height: 100%;
+        background-color: wheat;
+        background-image: url('../../assets/welcome.jpg');
+        background-size: cover;
+        border:12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+
+    .login-right{
+        width: 40%;
+        height: 100%;
+        position: static;
+        transform: translate(0%, 0%);
+    }
+
+}
+

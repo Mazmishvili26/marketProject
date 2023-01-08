@@ -1,0 +1,39 @@
+.hero-section{
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero-section img{
+    width: 100%;
+}
+
+
+/* slider-container */
+
+.slider-container{
+    height: 500px;
+}
+
+article{
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+
+article.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+article.lastSlide {
+    transform: translateX(-100%);
+    overflow: hidden;
+}
+
+article.nextSlide {
+    transform: translateX(100%);
+    display: none;
+}
